@@ -1,0 +1,64 @@
+baseURL: https://BMI-UC.github.io/
+languageCode: en-us
+title: Biomedical Informatics at UC
+theme: ["PaperMod"]
+
+languages:
+  en:
+    languageName: "English"
+    weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+      series: series
+    menu:
+      main:
+        - name: Blog
+          url: posts/
+          weight: 10
+        - name: Search
+          url: search/
+          weight: 10
+        - name: Tags
+          url: tags/
+          weight: 10
+        - name: WiKi
+          url: https://bmi-uc.github.io/Wiki/
+
+mainsections: ["posts"]
+params:
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+  profileMode:
+    enabled: true
+    title: "Biomedical Informatics" # optional default will be site title
+    subtitle: "Student-Run Info"
+    imageUrl: "simple_DNA_backbone.svg" # optional
+    imageWidth: 300 # custom size
+    imageHeight: 300 # custom size
+    buttons:
+      - name: Blog
+        url: "posts/"
+      - name: Github
+        url: "https://github.com/BMI-UC/BMI-UC"
+      - name: Wiki
+        url: "https://bmi-uc.github.io/Wiki/"
+
+    socialIcons: # optional
+      - name: "<platform>"
+        url: "<link>"
+      - name: "<platform 2>"
+        url: "<link2>"
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
