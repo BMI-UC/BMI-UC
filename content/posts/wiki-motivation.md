@@ -5,7 +5,6 @@ date: "2024-11-07"
 description: "Motivation for making a wiki for the BMI program"
 summary: "Motivation for making a wiki for the BMI program"
 tags: ["Wiki"]
-series: ["Wiki"]
 ShowToc: true
 TocOpen: true
 ---
