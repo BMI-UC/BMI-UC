@@ -22,11 +22,13 @@ languages:
         - name: Tags
           url: tags/
           weight: 10
-        - name: WiKi
+        - name: Wiki
           url: https://bmi-uc.github.io/Wiki/
 
 mainsections: ["posts"]
 params:
+  assets:
+    favicon: "assets/favicon.svg"
   fuseOpts:
     isCaseSensitive: false
     shouldSort: true
@@ -62,3 +64,9 @@ outputs:
     - HTML
     - RSS
     - JSON # necessary for search
+
+
+    #     favicon16x16: "<link / abs url>"
+    #     favicon32x32: "<link / abs url>"
+    #     apple_touch_icon: "<link / abs url>"
+    #     safari_pinned_tab: "<link / abs url>"
